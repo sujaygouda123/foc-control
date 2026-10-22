@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "foc-control") (type "KiCad") (uri "${KIPRJMOD}/libs/foc-control.kicad_sym") (options "") (descr "Project symbols (DRV8353SRTA built from TI datasheet SLVSDY6A)"))
+	(lib (name "XT30") (type "KiCad") (uri "${KIPRJMOD}/libs/XT30/XT30.kicad_sym") (options "") (descr "AMASS XT30PW(2+2)-M, LCSC C19268030, via easyeda2kicad"))
+)
