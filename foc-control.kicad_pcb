@@ -4310,7 +4310,7 @@
 				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
 			)
 			(stroke
-				(width 0.15)
+				(width 0)
 				(type solid)
 			)
 			(fill yes)
@@ -13552,7 +13552,7 @@
 				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
 			)
 			(stroke
-				(width 0.15)
+				(width 0)
 				(type solid)
 			)
 			(fill yes)
@@ -17836,7 +17836,7 @@
 				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
 			)
 			(stroke
-				(width 0.15)
+				(width 0)
 				(type solid)
 			)
 			(fill yes)
