@@ -62,7 +62,30 @@ Inner layers are 1 oz. Power runs on the 2 oz outer layers; every signal layer s
 | High voltage (VBUS, phases) | 0.5 mm, power in pours | 0.2 mm |
 | CAN pair | 0.2 mm | 0.2 mm between the pair |
 
-## Files
+## File structure
 
-- Open `foc-control.kicad_pro` in KiCad 10. Project libraries are in `libs/`.
-- BOM: `bom/foc-control.csv`.
+```
+foc-control/
+├── foc-control.kicad_pro        KiCad 10 project (open this)
+├── foc-control.kicad_sch        Root schematic (links the 6 sheets below)
+├── can_connectors.kicad_sch     XT30 connectors, MCP2562FD CAN FD transceiver, termination
+├── encoder.kicad_sch            AS5047P magnetic encoder
+├── MCU.kicad_sch                STM32G474, clock, decoupling, reset/boot, SWD pads
+├── power_rails.kicad_sch        12 V and 5 V bucks (LM5164), 3.3 V LDO
+├── gate_driver.kicad_sch        DRV8353 gate driver
+├── power_stage.kicad_sch        3 half-bridges, shunts, bus capacitors, VBUS sense, NTC
+├── foc-control.kicad_pcb        Ø80 mm, 8-layer board layout
+├── fp-lib-table                 Project footprint libraries (points to libs/)
+├── sym-lib-table                Project symbol libraries (points to libs/)
+├── libs/
+│   ├── foc-control.kicad_sym    DRV8353 symbol
+│   ├── DRV8353.pretty/          DRV8353 footprint (WQFN-40)
+│   ├── XT30/                    XT30PW 2+2 symbol, footprint and 3D model
+│   └── logo.pretty/             Board logo
+├── bom/
+│   └── foc-control.csv          Bill of materials
+└── docs/
+    ├── Stage1/Stage1.drawio.png Stage 1 block diagram (single actuator)
+    ├── Stage2/Stage2.drawio.png Stage 2 wiring diagram (multiple actuators)
+    └── img/                     3D renders of the board (top, bottom)
+```
